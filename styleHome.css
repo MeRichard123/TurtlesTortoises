@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Krona+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Krona One", sans-serif;
+}
+
+.banner {
+  display: grid;
+  background: #91a56a;
+  grid-template-columns: auto 100px;
+  align-items: center;
+}
+nav {
+  background: black;
+  height: 50px;
+}
+.nav-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.nav-item {
+  text-align: center;
+  justify-self: center;
+  list-style: none;
+  padding: 10px 0 0 0;
+}
+.nav-item a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+.nav-item:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
+}
+.show-menu-btn,
+.hide-menu-btn {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+.show-menu-btn {
+  float: right;
+}
+.hide-menu-btn:hover {
+  color: gray;
+}
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+body {
+  background: rgba(145, 165, 106, 0.7);
+}
+
+.intro-text {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px 10px 10px 10px;
+  background: rgba(50, 56, 39, 0.7);
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  margin-top: 5em;
+}
+
+.desc-text {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px 10px 10px 10px;
+  background: rgba(50, 56, 39, 0.7);
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 800px) {
+  .show-menu-btn,
+  .hide-menu-btn {
+    display: block;
+  }
+  .show-menu-btn:hover {
+    color: gray;
+  }
+  .nav-items {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .nav-items a {
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  .show-menu-btn {
+    padding: 5px 10px 0 0;
+  }
+  #chk:checked ~ .nav-items {
+    right: 0;
+  }
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tort {
+    margin-bottom: 20px;
+  }
+  .tortoise,
+  .turtle {
+    max-width: 100%;
+    max-height: 25%;
+  }
+}
