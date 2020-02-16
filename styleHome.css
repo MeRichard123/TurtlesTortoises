@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Krona One", sans-serif;
 }
+html {
+  overflow-x: hidden;
+}
 
 .banner {
   display: grid;
@@ -127,6 +130,11 @@ body {
   }
   .tort {
     margin-bottom: 20px;
+  }
+  .images img {
+    width: calc(1vw + 300px);
+    object-fit: contain;
+    height: 100%;
   }
   .tortoise,
   .turtle {

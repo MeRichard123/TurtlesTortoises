@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Krona One", sans-serif;
 }
+html {
+  overflow-x: hidden;
+}
 .banner {
   display: grid;
   background: #91a56a;
