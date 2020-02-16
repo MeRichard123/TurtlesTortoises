@@ -131,6 +131,7 @@ body {
   }
   .turt {
     padding: 15px 0 15px 0;
+    pointer-events: none;
   }
   .turt img {
     width: 100%;

@@ -133,6 +133,7 @@ body {
   }
   .sturt {
     padding: 15px 0 15px 0;
+    pointer-events: none;
   }
   .sturt img {
     width: 100%;
