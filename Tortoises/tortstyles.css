@@ -134,6 +134,8 @@ body {
   }
   .tort {
     padding: 15px 0 15px 0;
+  }
+  .tort:hover {
     pointer-events: none;
   }
   .tort img {
